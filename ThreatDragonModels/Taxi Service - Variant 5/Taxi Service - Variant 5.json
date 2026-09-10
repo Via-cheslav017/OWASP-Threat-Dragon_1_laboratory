@@ -1,0 +1,29 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "2026-09-10",
+  "summary": {
+    "title": "Taxi Service - Variant 5",
+    "owner": "Viacheslav Vorona",
+    "description": "A taxi booking service featuring driver geolocation, card payments via an external payment gateway, and a rating system for passengers and drivers. Components: passenger app, driver app, API gateway, dispatch/geolocation service, rating service, user database, trip database, transaction database.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Taxi-Service-Variant-5",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": ""
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Oleksyuk, V. V.",
+    "threatTop": 0
+  }
+}
