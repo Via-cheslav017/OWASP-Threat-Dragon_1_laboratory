@@ -112,6 +112,190 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "оцінка",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "оцінка"
+            ],
+            "id": "9134c160-e888-4ed6-9f6c-027783817fe2",
+            "source": {
+              "x": 438,
+              "y": 135
+            },
+            "target": {
+              "cell": "c226bcea-6393-4018-a7a7-a2f6c019ae29",
+              "port": "230a09fe-3ff1-4a90-9ff5-7a7ea4fb201e"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "дані запиту, координати",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "дані запиту, координати"
+            ],
+            "id": "7072aef5-fc05-4d8c-895d-b86f7933a039",
+            "source": {
+              "x": 490,
+              "y": 110
+            },
+            "target": {
+              "cell": "16c022a9-0f65-4857-9dd0-8225fd06572f",
+              "port": "230a09fe-3ff1-4a90-9ff5-7a7ea4fb201e"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "координати, статуси",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "координати, статуси"
+            ],
+            "id": "6b74c189-674d-4123-b8c8-f5e110b6fb82",
+            "source": {
+              "x": 602,
+              "y": 329
+            },
+            "target": {
+              "cell": "624bb496-67ac-4a15-a686-c2f2f98a2d4f",
+              "port": "230a09fe-3ff1-4a90-9ff5-7a7ea4fb201e"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "оновлення рейтингу",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "оновлення рейтингу"
+            ],
+            "id": "d204cdfe-d842-43fb-96ea-82e22e45e7f4",
+            "source": {
+              "cell": "c226bcea-6393-4018-a7a7-a2f6c019ae29",
+              "port": "70d91a05-a7ca-4185-a651-0d227277f8c0"
+            },
+            "target": {
+              "cell": "624bb496-67ac-4a15-a686-c2f2f98a2d4f",
+              "port": "230a09fe-3ff1-4a90-9ff5-7a7ea4fb201e"
+            }
+          },
+          {
             "position": {
               "x": 348,
               "y": -15
@@ -233,8 +417,8 @@
           },
           {
             "position": {
-              "x": 40,
-              "y": 547
+              "x": 180,
+              "y": 477
             },
             "size": {
               "width": 112.5,
@@ -350,8 +534,8 @@
           },
           {
             "position": {
-              "x": 298,
-              "y": 522
+              "x": 438,
+              "y": 452
             },
             "size": {
               "width": 110,
@@ -587,8 +771,8 @@
           },
           {
             "position": {
-              "x": 170,
-              "y": 572
+              "x": 300.5,
+              "y": 502
             },
             "size": {
               "width": 112.5,
@@ -611,8 +795,8 @@
           },
           {
             "position": {
-              "x": 293,
-              "y": 199
+              "x": 263,
+              "y": 229
             },
             "size": {
               "width": 120,
@@ -731,8 +915,8 @@
           },
           {
             "position": {
-              "x": 508,
-              "y": 209
+              "x": 558,
+              "y": 239
             },
             "size": {
               "width": 90,
