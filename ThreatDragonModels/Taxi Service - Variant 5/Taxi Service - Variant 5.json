@@ -932,8 +932,8 @@
                 "text": "Пасажир"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1030,9 +1030,40 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "442a03ee-deeb-4503-befb-7f40c5b2881c",
+                  "title": "Захоплення акаунта пасажира [№1]",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Підбір або підставлення викрадених паролів, CWE-307",
+                  "mitigation": "Ліміт спроб входу, MFA, argon2 для паролів",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "d8c4af9a-2d6e-4173-b236-563e2fcc55d8",
+                  "title": "Пасажир заперечує замовлення й оплату [№7]",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Немає доказів замовлення, CWE-778",
+                  "mitigation": "Незмінний журнал аудиту з ID дії, часом і пристроєм",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -1990,6 +2021,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Oleksyuk, V. V.",
-    "threatTop": 3
+    "threatTop": 5
   }
 }
