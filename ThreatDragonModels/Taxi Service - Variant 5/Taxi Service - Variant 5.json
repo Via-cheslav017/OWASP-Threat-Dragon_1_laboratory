@@ -161,6 +161,34 @@
             }
           },
           {
+            "position": {
+              "x": 548,
+              "y": 622
+            },
+            "size": {
+              "width": 160,
+              "height": 60
+            },
+            "attrs": {
+              "label": {
+                "text": "Платіжний шлюз\n(Stripe/LiqPay)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "e5f7ae32-a355-48a9-87c5-e56e7fcf7fa5",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Платіжний шлюз\n(Stripe/LiqPay)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            }
+          },
+          {
             "shape": "flow",
             "attrs": {
               "line": {
