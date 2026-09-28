@@ -695,8 +695,8 @@
                 "text": "Водій"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -793,9 +793,40 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "ffd9ed6f-a428-48cd-80da-922dcbfdb297",
+                  "title": "Підміна особи водія [№2]",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Чужий або скомпрометований пристрій чи акаунт видає себе за водія, CWE-290",
+                  "mitigation": "MFA, прив'язка до пристрою, періодична верифікація водія",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                },
+                {
+                  "id": "fb01d26a-0a06-42d9-870f-22d1e106d90f",
+                  "title": "Водій заперечує прийняття або завершення поїздки [№6]",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Спір без доказів, CWE-778",
+                  "mitigation": "Підписані події accept/start/finish у журналі",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -2021,6 +2052,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Oleksyuk, V. V.",
-    "threatTop": 5
+    "threatTop": 7
   }
 }
