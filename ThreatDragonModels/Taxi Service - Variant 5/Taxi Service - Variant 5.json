@@ -49,6 +49,90 @@
             "vertices": []
           },
           {
+            "position": {
+              "x": 816,
+              "y": 169
+            },
+            "size": {
+              "width": 150,
+              "height": 60
+            },
+            "attrs": {
+              "label": {
+                "text": "БД користувачів"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "bde8bb66-879c-45d1-a97e-39ff32b5c5d9",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "БД користувачів",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            }
+          },
+          {
+            "position": {
+              "x": 816,
+              "y": 269
+            },
+            "size": {
+              "width": 128,
+              "height": 60
+            },
+            "attrs": {
+              "label": {
+                "text": "БД поїздок"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "17650986-b782-419c-bf62-71369afa2e65",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "БД поїздок",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            }
+          },
+          {
+            "position": {
+              "x": 816,
+              "y": 377
+            },
+            "size": {
+              "width": 128,
+              "height": 60
+            },
+            "attrs": {
+              "label": {
+                "text": "БД транзакцій"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "d0cd9b42-9661-4381-a0cc-98bbcdc37d84",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "БД транзакцій",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            }
+          },
+          {
             "shape": "flow",
             "attrs": {
               "line": {
