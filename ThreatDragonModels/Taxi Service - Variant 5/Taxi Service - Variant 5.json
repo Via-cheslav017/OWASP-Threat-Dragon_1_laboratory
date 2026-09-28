@@ -1041,7 +1041,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "запит на підбір",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1049,7 +1049,7 @@
               "containedElements": []
             },
             "labels": [
-              "Trust Boundary"
+              "запит на підбір"
             ],
             "id": "fa234c2f-7fe2-4646-97ae-910c32bf0c81",
             "source": {
@@ -1082,19 +1082,67 @@
             ],
             "id": "b7a156ab-0e65-4a46-920a-3c57c3c9b75e",
             "source": {
-              "x": 760,
-              "y": 0
+              "x": -1640,
+              "y": 500
             },
             "target": {
-              "x": 700,
-              "y": 580
+              "x": -1700,
+              "y": 1080
             },
             "vertices": [
               {
-                "x": 750,
-                "y": 430
+                "x": -1650,
+                "y": 930
               }
             ]
+          },
+          {
+            "position": {
+              "x": 0,
+              "y": 520
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "ЗОНА КЛІЄНТА"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "a14b27c2-a126-41dd-80ca-d0bccaaaba90",
+            "zIndex": 20,
+            "data": {
+              "type": "tm.Text",
+              "name": "ЗОНА КЛІЄНТА",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 0,
+              "y": 620
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "ЗОНА СЕРВЕРА"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "62c96ee8-5bbf-46bb-ac0c-1d740c539299",
+            "zIndex": 21,
+            "data": {
+              "type": "tm.Text",
+              "name": "ЗОНА СЕРВЕРА",
+              "hasOpenThreats": false
+            }
           }
         ],
         "description": ""
