@@ -232,7 +232,13 @@
             "target": {
               "cell": "f1e72475-aaa4-4a38-bba2-ba00be832a2c",
               "port": "19bbdb70-9090-4767-be73-021a740a0f93"
-            }
+            },
+            "vertices": [
+              {
+                "x": 280,
+                "y": 59
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -254,7 +260,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "прийняття",
+              "name": "прийняття\nзамовлення, \nGPS",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -268,7 +274,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "прийняття"
+              "прийняття\nзамовлення, \nGPS"
             ],
             "id": "fd471696-9b52-4c33-ac8a-5ddd0dfcae00",
             "source": {
@@ -278,7 +284,8 @@
             "target": {
               "cell": "624bb496-67ac-4a15-a686-c2f2f98a2d4f",
               "port": "19bbdb70-9090-4767-be73-021a740a0f93"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -324,7 +331,13 @@
             "target": {
               "cell": "c226bcea-6393-4018-a7a7-a2f6c019ae29",
               "port": "230a09fe-3ff1-4a90-9ff5-7a7ea4fb201e"
-            }
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 180
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -508,7 +521,13 @@
             "target": {
               "x": 820,
               "y": 200
-            }
+            },
+            "vertices": [
+              {
+                "x": 740,
+                "y": 230
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1130,30 +1149,6 @@
           },
           {
             "position": {
-              "x": 266.75,
-              "y": 502
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "замовлення, GPS"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "zIndex": 15,
-            "id": "c0319183-82a2-416b-a3ab-7872f9f4ed5b",
-            "data": {
-              "type": "tm.Text",
-              "name": "замовлення, GPS",
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
               "x": 263,
               "y": 229
             },
@@ -1270,13 +1265,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1625,6 +1613,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Oleksyuk, V. V.",
-    "threatTop": 1
+    "threatTop": 3
   }
 }
