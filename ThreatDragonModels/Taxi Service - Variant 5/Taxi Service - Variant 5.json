@@ -1270,6 +1270,13 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1580,7 +1587,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "запит на оплату, підтвердження",
+              "name": "запит на оплату, \nпідтвердження",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1594,7 +1601,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "запит на оплату, підтвердження"
+              "запит на оплату, \nпідтвердження"
             ],
             "id": "00224149-c859-4627-a6ff-3ba98c3db880",
             "source": {
@@ -1602,9 +1609,15 @@
               "y": 741
             },
             "target": {
-              "x": 750,
-              "y": 740
-            }
+              "x": 850,
+              "y": 750
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 741
+              }
+            ]
           }
         ],
         "description": ""
