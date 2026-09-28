@@ -143,7 +143,7 @@
             },
             "vertices": [
               {
-                "x": 280,
+                "x": 310,
                 "y": 59
               }
             ]
@@ -2024,8 +2024,8 @@
                 "text": "Платіжний шлюз\n(Stripe/LiqPay)"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2122,9 +2122,40 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "72079ae9-4f7d-415d-b1a5-5c287db1cb1d",
+                  "title": "Підробка платіжного шлюзу",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Фальшивий endpoint приймає платежі, CWE-346",
+                  "mitigation": "Фіксований URL, перевірка TLS-сертифіката, підпис відповідей",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 39,
+                  "score": ""
+                },
+                {
+                  "id": "d94fd63a-8680-450a-ab80-4d0b5fe48b0f",
+                  "title": "Спір щодо платежу (chargeback)",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Немає підтверджень для арбітражу, CWE-778",
+                  "mitigation": "Зберігати ID транзакції шлюзу й журнал відповідей",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 40,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -2141,11 +2172,13 @@
                 "text": "БД користувачів"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2242,13 +2275,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a5da82ce-5454-4f7c-bce8-761a3821df44",
+                  "title": "Несанкціонована зміна облікових записів",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Надмірні права доступу до БД, CWE-284",
+                  "mitigation": "Мінімальні права, аудит змін",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 33,
+                  "score": ""
+                },
+                {
+                  "id": "dcb77955-93a3-41ae-b88f-96896b2a0a55",
+                  "title": "Витік персональних даних і паролів",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Дамп БД, паролі без адаптивного хешу, CWE-916",
+                  "mitigation": "argon2 або bcrypt, шифрування даних at rest",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 34,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -2265,11 +2331,13 @@
                 "text": "БД поїздок"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2366,13 +2434,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "7672c7a0-12ef-433a-8211-55d8d219d768",
+                  "title": "Підміна вартості або маршруту поїздки",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Зміна записів поза бізнес-логікою, CWE-472",
+                  "mitigation": "Запис лише через API, контроль змін",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 35,
+                  "score": ""
+                },
+                {
+                  "id": "57bdd719-e05f-4d05-9384-8758241533be",
+                  "title": "Немає історії змін статусів поїздки",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Спір неможливо розв'язати, CWE-778",
+                  "mitigation": "Append-only журнал статусів",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 36,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -2389,11 +2490,13 @@
                 "text": "БД транзакцій"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2490,13 +2593,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "205d808a-afb1-4e0c-b081-7b9df54469cd",
+                  "title": "Зберігання зайвих платіжних даних [№9]",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "Повні реквізити картки в БД, CWE-312",
+                  "mitigation": "Лише токен та ID транзакції, зменшення обсягу PCI DSS",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 37,
+                  "score": ""
+                },
+                {
+                  "id": "3cb0b918-b22b-4a7f-babb-29be7b3cb902",
+                  "title": "Немає доказів оплати [№7]",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Записи можна змінити або вони неповні, CWE-778",
+                  "mitigation": "Незмінні записи з ID шлюзу й часом",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 38,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           }
         ],
@@ -2505,6 +2641,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Oleksyuk, V. V.",
-    "threatTop": 32
+    "threatTop": 40
   }
 }
