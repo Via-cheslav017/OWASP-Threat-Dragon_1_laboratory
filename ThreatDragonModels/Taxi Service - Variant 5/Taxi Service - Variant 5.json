@@ -49,90 +49,6 @@
             "vertices": []
           },
           {
-            "position": {
-              "x": 816,
-              "y": 169
-            },
-            "size": {
-              "width": 150,
-              "height": 60
-            },
-            "attrs": {
-              "label": {
-                "text": "БД користувачів"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "bde8bb66-879c-45d1-a97e-39ff32b5c5d9",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "БД користувачів",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            }
-          },
-          {
-            "position": {
-              "x": 856,
-              "y": 269
-            },
-            "size": {
-              "width": 128,
-              "height": 60
-            },
-            "attrs": {
-              "label": {
-                "text": "БД поїздок"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "17650986-b782-419c-bf62-71369afa2e65",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "БД поїздок",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            }
-          },
-          {
-            "position": {
-              "x": 816,
-              "y": 377
-            },
-            "size": {
-              "width": 128,
-              "height": 60
-            },
-            "attrs": {
-              "label": {
-                "text": "БД транзакцій"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "d0cd9b42-9661-4381-a0cc-98bbcdc37d84",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "БД транзакцій",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            }
-          },
-          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -158,34 +74,6 @@
             "target": {
               "x": 700,
               "y": 580
-            }
-          },
-          {
-            "position": {
-              "x": 856,
-              "y": 715
-            },
-            "size": {
-              "width": 160,
-              "height": 60
-            },
-            "attrs": {
-              "label": {
-                "text": "Платіжний шлюз\n(Stripe/LiqPay)"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "zIndex": -1,
-            "id": "e5f7ae32-a355-48a9-87c5-e56e7fcf7fa5",
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "Платіжний шлюз\n(Stripe/LiqPay)",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
             }
           },
           {
@@ -1602,10 +1490,499 @@
             },
             "vertices": [
               {
-                "x": 810,
+                "x": 830,
                 "y": 741
               }
             ]
+          },
+          {
+            "position": {
+              "x": 853.5,
+              "y": 715
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Платіжний шлюз\n(Stripe/LiqPay)"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "9511c09b-577b-4b75-b073-c707809fb906"
+                },
+                {
+                  "group": "right",
+                  "id": "7b62812d-1006-4075-9476-92df3a1a76d5"
+                },
+                {
+                  "group": "bottom",
+                  "id": "e81bcf56-c5d4-4880-b27f-2875093dd336"
+                },
+                {
+                  "group": "left",
+                  "id": "1f1d2f0d-2cb9-41ff-9aee-85ed3944d95d"
+                }
+              ]
+            },
+            "id": "7bb18cbf-3b27-4919-9cc4-ccb99281e15e",
+            "zIndex": 24,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Платіжний шлюз\n(Stripe/LiqPay)",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 826,
+              "y": 169
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "БД користувачів"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "426a9b62-c6e3-4942-ac48-40ec019eba12"
+                },
+                {
+                  "group": "right",
+                  "id": "56f70f6c-5892-4d42-9ec5-9b0c896f9d91"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fbba680a-3d36-4895-bce8-a7083d11f32b"
+                },
+                {
+                  "group": "left",
+                  "id": "d8821c1d-c767-4897-aba5-6ecce5e7261f"
+                }
+              ]
+            },
+            "id": "c0b6d540-fb99-4392-81ed-7dda5402cb43",
+            "zIndex": 25,
+            "data": {
+              "type": "tm.Store",
+              "name": "БД користувачів",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 849.75,
+              "y": 279
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "БД поїздок"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "426a9b62-c6e3-4942-ac48-40ec019eba12"
+                },
+                {
+                  "group": "right",
+                  "id": "56f70f6c-5892-4d42-9ec5-9b0c896f9d91"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fbba680a-3d36-4895-bce8-a7083d11f32b"
+                },
+                {
+                  "group": "left",
+                  "id": "d8821c1d-c767-4897-aba5-6ecce5e7261f"
+                }
+              ]
+            },
+            "id": "ec8daeb5-a320-4241-8b53-cab30f7dd040",
+            "zIndex": 26,
+            "data": {
+              "type": "tm.Store",
+              "name": "БД поїздок",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 813,
+              "y": 392
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "БД транзакцій"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "426a9b62-c6e3-4942-ac48-40ec019eba12"
+                },
+                {
+                  "group": "right",
+                  "id": "56f70f6c-5892-4d42-9ec5-9b0c896f9d91"
+                },
+                {
+                  "group": "bottom",
+                  "id": "fbba680a-3d36-4895-bce8-a7083d11f32b"
+                },
+                {
+                  "group": "left",
+                  "id": "d8821c1d-c767-4897-aba5-6ecce5e7261f"
+                }
+              ]
+            },
+            "id": "9d3dd23e-a11d-4817-871b-b0136a35d9e1",
+            "zIndex": 27,
+            "data": {
+              "type": "tm.Store",
+              "name": "БД транзакцій",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
           }
         ],
         "description": ""
