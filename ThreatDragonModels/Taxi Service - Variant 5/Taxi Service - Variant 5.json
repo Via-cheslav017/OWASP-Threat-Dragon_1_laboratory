@@ -575,8 +575,8 @@
                 "text": "Застосунок пасажира"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -673,12 +673,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "3de00b7b-8b1d-4ed3-bc15-2569477771cc",
+                  "title": "Модифікація клієнтського застосунку",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Реверс-інжиніринг, обхід перевірок на клієнті, CWE-602",
+                  "mitigation": "Усі перевірки на сервері, перевірка цілісності застосунку",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "3ae0346c-6e15-4307-afb6-7f2b2a9bf629",
+                  "title": "Витік токена й геопозиції з пристрою",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Токени та координати у відкритому сховищі чи логах, CWE-312",
+                  "mitigation": "Keychain/Keystore, короткоживучі токени, без PII в логах",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2052,6 +2087,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Oleksyuk, V. V.",
-    "threatTop": 7
+    "threatTop": 9
   }
 }
