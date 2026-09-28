@@ -317,6 +317,56 @@
             "target": {
               "cell": "624bb496-67ac-4a15-a686-c2f2f98a2d4f",
               "port": "230a09fe-3ff1-4a90-9ff5-7a7ea4fb201e"
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
@@ -878,8 +928,8 @@
                 "text": "Застосунок водія"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -976,12 +1026,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "c8f133d8-0223-4caf-8714-365c93027fa4",
+                  "title": "Модифікація або хукінг застосунку водія",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "Підміна GPS-модуля й статусів на пристрої, CWE-602",
+                  "mitigation": "Play Integrity/App Attest, серверна валідація",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                },
+                {
+                  "id": "02e27964-548f-4190-9881-da64beb6393c",
+                  "title": "Витік даних пасажира на пристрої водія",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Ім'я та адреса посадки лишаються в кеші й логах, CWE-532",
+                  "mitigation": "Мінімізація даних, очищення після поїздки",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1146,8 +1231,8 @@
                 "text": "Сервіс рейтингів"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1244,12 +1329,47 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a5b37ac9-d80d-4ffa-9e35-f5e0d3ce3fb0",
+                  "title": "Маніпуляція рейтингом [№14]",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "description": "Користувач змінює або накручує оцінку без права, CWE-863",
+                  "mitigation": "Оцінка лише від учасника завершеної поїздки, одна на поїздку",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "7055e7f3-300a-4ba8-87bf-3a5c059e16a1",
+                  "title": "Немає сліду змін рейтингу",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Repudiation",
+                  "description": "Неможливо довести, хто й коли змінив оцінку, CWE-778",
+                  "mitigation": "Журнал змін з автором, часом, ID поїздки",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -1266,8 +1386,8 @@
                 "text": "API-шлюз"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1364,12 +1484,60 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "9c76f40e-93b4-4821-a505-58f1bfbc1ede",
+                  "title": "Доступ пасажира до адмін- і водійських маршрутів [№13]",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Elevation of privilege",
+                  "description": "Виклик маршрутів чужої ролі, CWE-285. Score: 8.8",
+                  "mitigation": "Deny by default, RBAC, перевірка ролі на сервері",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "24f3c901-abc3-4658-b22e-c0cf8418a331",
+                  "title": "IDOR: доступ до чужих даних водіїв і поїздок [№10]",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Зміна ID у запиті дає чужі документи, CWE-639",
+                  "mitigation": "Перевірка власності ресурсу на кожен запит",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                },
+                {
+                  "id": "61a51792-be09-41c4-b69f-352669d7152f",
+                  "title": "Флуд і масова реєстрація фейкових акаунтів [№12]",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Вичерпання ресурсів, CWE-770",
+                  "mitigation": "Rate limiting, CAPTCHA, верифікація телефону, квоти",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -2087,6 +2255,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Oleksyuk, V. V.",
-    "threatTop": 9
+    "threatTop": 16
   }
 }
