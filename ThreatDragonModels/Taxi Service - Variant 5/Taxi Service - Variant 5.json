@@ -1663,7 +1663,7 @@
                   "id": "9c76f40e-93b4-4821-a505-58f1bfbc1ede",
                   "title": "Доступ пасажира до адмін- і водійських маршрутів [№13]",
                   "status": "Open",
-                  "severity": "Critical",
+                  "severity": "High",
                   "type": "Elevation of privilege",
                   "description": "Виклик маршрутів чужої ролі, CWE-285. Score: 8.8",
                   "mitigation": "Deny by default, RBAC, перевірка ролі на сервері",
@@ -1705,8 +1705,15 @@
                 "repudiation": 1,
                 "informationDisclosure": 1,
                 "denialOfService": 1,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1963,7 +1970,7 @@
                   "status": "Open",
                   "severity": "Critical",
                   "type": "Information disclosure",
-                  "description": "Картка в логах або передана відкритим текстом, CWE-312. Score: 9.1",
+                  "description": "Картка в логах або передана відкритим текстом, CWE-312. Score: 8.6",
                   "mitigation": "Токенізація через шлюз, не логувати PAN, TLS",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1987,7 +1994,7 @@
               "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 1,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
@@ -2031,6 +2038,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 24,
             "ports": {
               "groups": {
                 "top": {
@@ -2114,7 +2122,6 @@
               ]
             },
             "id": "7bb18cbf-3b27-4919-9cc4-ccb99281e15e",
-            "zIndex": 24,
             "data": {
               "type": "tm.Actor",
               "name": "Платіжний шлюз\n(Stripe/LiqPay)",
@@ -2184,6 +2191,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 25,
             "ports": {
               "groups": {
                 "top": {
@@ -2267,7 +2275,6 @@
               ]
             },
             "id": "c0b6d540-fb99-4392-81ed-7dda5402cb43",
-            "zIndex": 25,
             "data": {
               "type": "tm.Store",
               "name": "БД користувачів",
@@ -2343,6 +2350,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 26,
             "ports": {
               "groups": {
                 "top": {
@@ -2426,7 +2434,6 @@
               ]
             },
             "id": "ec8daeb5-a320-4241-8b53-cab30f7dd040",
-            "zIndex": 26,
             "data": {
               "type": "tm.Store",
               "name": "БД поїздок",
@@ -2502,6 +2509,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 27,
             "ports": {
               "groups": {
                 "top": {
@@ -2585,7 +2593,6 @@
               ]
             },
             "id": "9d3dd23e-a11d-4817-871b-b0136a35d9e1",
-            "zIndex": 27,
             "data": {
               "type": "tm.Store",
               "name": "БД транзакцій",
