@@ -1041,7 +1041,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "запит на підбір",
+              "name": "",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -1049,7 +1049,7 @@
               "containedElements": []
             },
             "labels": [
-              "запит на підбір"
+              ""
             ],
             "id": "fa234c2f-7fe2-4646-97ae-910c32bf0c81",
             "source": {
@@ -1123,7 +1123,7 @@
           {
             "position": {
               "x": 0,
-              "y": 620
+              "y": 600
             },
             "size": {
               "width": 112.5,
