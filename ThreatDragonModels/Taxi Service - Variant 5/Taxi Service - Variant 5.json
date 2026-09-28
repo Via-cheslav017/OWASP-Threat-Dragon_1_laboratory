@@ -133,6 +133,34 @@
             }
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "9333204c-4cdd-4eab-9910-a1c4821147cb",
+            "source": {
+              "x": -20,
+              "y": 580
+            },
+            "target": {
+              "x": 700,
+              "y": 580
+            }
+          },
+          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -1147,35 +1175,6 @@
             }
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 18,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "fa234c2f-7fe2-4646-97ae-910c32bf0c81",
-            "source": {
-              "x": -10,
-              "y": 590
-            },
-            "target": {
-              "x": 1160,
-              "y": 590
-            },
-            "vertices": []
-          },
-          {
             "position": {
               "x": 0,
               "y": 537
@@ -1202,7 +1201,7 @@
           {
             "position": {
               "x": 0,
-              "y": 580
+              "y": 562
             },
             "size": {
               "width": 112.5,
