@@ -39,7 +39,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "запит, логін",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -53,7 +53,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "запит, логін"
             ],
             "id": "35b65ac5-e483-4569-8123-551a87b8d736",
             "source": {
@@ -103,8 +103,8 @@
             ],
             "id": "fd471696-9b52-4c33-ac8a-5ddd0dfcae00",
             "source": {
-              "x": 183,
-              "y": 512
+              "cell": "30506d38-f25a-4831-a0f3-67fc0013d1f2",
+              "port": "39faa75b-acea-4a01-8cb0-b8e6e69c7497"
             },
             "target": {
               "cell": "624bb496-67ac-4a15-a686-c2f2f98a2d4f",
@@ -233,8 +233,8 @@
           },
           {
             "position": {
-              "x": 70,
-              "y": 397
+              "x": 40,
+              "y": 547
             },
             "size": {
               "width": 112.5,
@@ -350,8 +350,8 @@
           },
           {
             "position": {
-              "x": 333,
-              "y": 372
+              "x": 298,
+              "y": 522
             },
             "size": {
               "width": 110,
@@ -587,8 +587,8 @@
           },
           {
             "position": {
-              "x": 200,
-              "y": 422
+              "x": 170,
+              "y": 572
             },
             "size": {
               "width": 112.5,
@@ -607,6 +607,246 @@
               "type": "tm.Text",
               "name": "замовлення, GPS",
               "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 293,
+              "y": 199
+            },
+            "size": {
+              "width": 120,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Сервіс рейтингів"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "230a09fe-3ff1-4a90-9ff5-7a7ea4fb201e"
+                },
+                {
+                  "group": "right",
+                  "id": "d7d7b67c-abf2-4c55-9f09-924ae0c81851"
+                },
+                {
+                  "group": "bottom",
+                  "id": "70d91a05-a7ca-4185-a651-0d227277f8c0"
+                },
+                {
+                  "group": "left",
+                  "id": "19bbdb70-9090-4767-be73-021a740a0f93"
+                }
+              ]
+            },
+            "id": "c226bcea-6393-4018-a7a7-a2f6c019ae29",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Process",
+              "name": "Сервіс рейтингів",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 508,
+              "y": 209
+            },
+            "size": {
+              "width": 90,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "API-шлюз"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "230a09fe-3ff1-4a90-9ff5-7a7ea4fb201e"
+                },
+                {
+                  "group": "right",
+                  "id": "d7d7b67c-abf2-4c55-9f09-924ae0c81851"
+                },
+                {
+                  "group": "bottom",
+                  "id": "70d91a05-a7ca-4185-a651-0d227277f8c0"
+                },
+                {
+                  "group": "left",
+                  "id": "19bbdb70-9090-4767-be73-021a740a0f93"
+                }
+              ]
+            },
+            "id": "16c022a9-0f65-4857-9dd0-8225fd06572f",
+            "zIndex": 17,
+            "data": {
+              "type": "tm.Process",
+              "name": "API-шлюз",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
             }
           }
         ],
