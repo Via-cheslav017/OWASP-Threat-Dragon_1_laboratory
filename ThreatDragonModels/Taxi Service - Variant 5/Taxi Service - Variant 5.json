@@ -64,8 +64,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "bde8bb66-879c-45d1-a97e-39ff32b5c5d9",
             "zIndex": -1,
+            "id": "bde8bb66-879c-45d1-a97e-39ff32b5c5d9",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "БД користувачів",
@@ -92,8 +92,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "17650986-b782-419c-bf62-71369afa2e65",
             "zIndex": -1,
+            "id": "17650986-b782-419c-bf62-71369afa2e65",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "БД поїздок",
@@ -120,8 +120,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "d0cd9b42-9661-4381-a0cc-98bbcdc37d84",
             "zIndex": -1,
+            "id": "d0cd9b42-9661-4381-a0cc-98bbcdc37d84",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "БД транзакцій",
@@ -162,7 +162,7 @@
           },
           {
             "position": {
-              "x": 746,
+              "x": 856,
               "y": 715
             },
             "size": {
@@ -176,8 +176,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "e5f7ae32-a355-48a9-87c5-e56e7fcf7fa5",
             "zIndex": -1,
+            "id": "e5f7ae32-a355-48a9-87c5-e56e7fcf7fa5",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Платіжний шлюз\n(Stripe/LiqPay)",
@@ -186,34 +186,6 @@
               "hasOpenThreats": false,
               "crossingFlows": [],
               "containedElements": []
-            }
-          },
-          {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": -1,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "69c2f5bd-1b72-45a3-b9c1-1ba05b9e8d6d",
-            "source": {
-              "x": -158,
-              "y": 655
-            },
-            "target": {
-              "x": -58,
-              "y": 755
             }
           },
           {
@@ -683,159 +655,6 @@
             }
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "26ea47ea-404b-4459-b1aa-6a7c3a671702",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "deac9585-e50c-485a-944e-086856bf86f9",
-            "source": {
-              "x": 588,
-              "y": 744
-            },
-            "target": {
-              "x": 688,
-              "y": 844
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "bef38410-09ad-4bfd-8e87-9ef9edffdfd1",
-            "source": {
-              "x": 746,
-              "y": 944
-            },
-            "target": {
-              "x": 846,
-              "y": 1044
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "da5a1e27-ae40-410e-af23-93bd0fb4e41d",
-            "source": {
-              "x": 588,
-              "y": 742
-            },
-            "target": {
-              "x": 688,
-              "y": 842
-            }
-          },
-          {
             "position": {
               "x": 348,
               "y": -15
@@ -856,6 +675,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -939,7 +759,6 @@
               ]
             },
             "id": "f1e72475-aaa4-4a38-bba2-ba00be832a2c",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Застосунок пасажира",
@@ -976,6 +795,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1059,7 +879,6 @@
               ]
             },
             "id": "30506d38-f25a-4831-a0f3-67fc0013d1f2",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Водій",
@@ -1093,6 +912,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1176,7 +996,6 @@
               ]
             },
             "id": "624bb496-67ac-4a15-a686-c2f2f98a2d4f",
-            "zIndex": 13,
             "data": {
               "type": "tm.Process",
               "name": "Застосунок водія",
@@ -1213,6 +1032,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1296,7 +1116,6 @@
               ]
             },
             "id": "36fef0e4-4a97-4de8-b034-75adc585391b",
-            "zIndex": 14,
             "data": {
               "type": "tm.Actor",
               "name": "Пасажир",
@@ -1325,8 +1144,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "c0319183-82a2-416b-a3ab-7872f9f4ed5b",
             "zIndex": 15,
+            "id": "c0319183-82a2-416b-a3ab-7872f9f4ed5b",
             "data": {
               "type": "tm.Text",
               "name": "замовлення, GPS",
@@ -1354,6 +1173,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1437,7 +1257,6 @@
               ]
             },
             "id": "c226bcea-6393-4018-a7a7-a2f6c019ae29",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "Сервіс рейтингів",
@@ -1474,6 +1293,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1557,7 +1377,6 @@
               ]
             },
             "id": "16c022a9-0f65-4857-9dd0-8225fd06572f",
-            "zIndex": 17,
             "data": {
               "type": "tm.Process",
               "name": "API-шлюз",
@@ -1589,8 +1408,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "a14b27c2-a126-41dd-80ca-d0bccaaaba90",
             "zIndex": 20,
+            "id": "a14b27c2-a126-41dd-80ca-d0bccaaaba90",
             "data": {
               "type": "tm.Text",
               "name": "ЗОНА КЛІЄНТА",
@@ -1613,8 +1432,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "62c96ee8-5bbf-46bb-ac0c-1d740c539299",
             "zIndex": 21,
+            "id": "62c96ee8-5bbf-46bb-ac0c-1d740c539299",
             "data": {
               "type": "tm.Text",
               "name": "ЗОНА СЕРВЕРА",
@@ -1642,6 +1461,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 22,
             "ports": {
               "groups": {
                 "top": {
@@ -1725,7 +1545,6 @@
               ]
             },
             "id": "1ed60a43-0940-431f-b30d-c12370590dd0",
-            "zIndex": 22,
             "data": {
               "type": "tm.Process",
               "name": "Сервіс диспетч. геолокації",
@@ -1739,6 +1558,52 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 23,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "запит на оплату, підтвердження",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "запит на оплату, підтвердження"
+            ],
+            "id": "00224149-c859-4627-a6ff-3ba98c3db880",
+            "source": {
+              "x": 588,
+              "y": 741
+            },
+            "target": {
+              "x": 750,
+              "y": 740
             }
           }
         ],
